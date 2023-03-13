@@ -1,0 +1,7 @@
+.idea
+contracts/.placeholder
+test/.placeholder
+node_modules
+bin
+types
+.env

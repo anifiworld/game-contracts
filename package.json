@@ -1,0 +1,43 @@
+{
+  "name": "game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "generate-types": "typechain --target=truffle-v5 './build/contracts/*.json'",
+    "postinstall": "truffle compile && yarn generate-types './build/contracts/*.json'",
+    "typecheck": "tsc --noEmit",
+    "test": "truffle compile --all && truffle test --network test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.2.0",
+    "@openzeppelin/contracts-upgradeable": "^4.2.0",
+    "@openzeppelin/truffle-upgrades": "^1.8.0",
+    "@truffle/hdwallet-provider": "^1.5.0",
+    "@typechain/truffle-v5": "^5.0.0",
+    "@types/bn.js": "^5.1.0",
+    "@types/chai": "^4.2.21",
+    "@types/mocha": "^9.0.0",
+    "@types/web3": "^1.2.2",
+    "dotenv": "^10.0.0",
+    "truffle": "^5.4.3",
+    "truffle-contract-size": "^2.0.1",
+    "truffle-cost": "^1.0.1",
+    "truffle-plugin-verify": "^0.5.18",
+    "ts-node": "^10.2.1",
+    "typechain": "^5.1.2",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "0.1.9",
+    "@truffle/contract": "^4.3.37",
+    "dayjs": "^1.10.7",
+    "js-yaml": "^4.1.0"
+  }
+}

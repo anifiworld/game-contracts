@@ -1,0 +1,11 @@
+ENV File variables
+````
+MNENOMIC = 
+ETHERSCAN_API = 
+POLYGONSCAN_API = 
+
+GOERLI_RPC = 
+MAINNET_RPC =
+MATIC_RPC =
+MUMBAI_RPC =
+````
